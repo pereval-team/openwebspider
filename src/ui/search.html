@@ -9,54 +9,6 @@
             margin: 1px auto;
         }
 
-        .rnd_top, .rnd_bottom {
-            display: block;
-            background: #FFFFFF;
-            font-size: 1px;
-        }
-
-        .rnd_b1, .rnd_b2, .rnd_b3, .rnd_b4 {
-            display: block;
-            overflow: hidden;
-        }
-
-        .rnd_b1, .rnd_b2, .rnd_b3 {
-            height: 1px;
-        }
-
-        .rnd_b2, .rnd_b3, .rnd_b4 {
-            background: #FFFFFF;
-            border-left: 1px solid #3300FF;
-            border-right: 1px solid #3300FF;
-        }
-
-        .rnd_b1 {
-            margin: 0 5px;
-            background: #3300FF;
-        }
-
-        .rnd_b2 {
-            margin: 0 3px;
-            border-width: 0 2px;
-        }
-
-        .rnd_b3 {
-            margin: 0 2px;
-        }
-
-        .rnd_b4 {
-            height: 2px;
-            margin: 0 1px;
-        }
-
-        .rnd_content {
-            display: block;
-            border: 0 solid #3300FF;
-            border-width: 0 1px;
-            background: #FFFFFF;
-            color: #000000;
-        }
-
         .centered {
             text-align: center;
         }
@@ -83,33 +35,31 @@
             border-bottom: 1px solid #EEE;
             margin: 20px;
         }
+
+        .headered {
+            margin: 0 0 20px 25px;
+	} 
+	
+	.header-span {
+	    font-size: 80px;	
+	}
+
+        form {
+	    margin-top: 20px;
+	}
+
     </style>
 
 </head>
 
 <body vlink="#0000FF" alink="#0000FF">
-<div class="centered">
-    <p><img src="ui/libs/css/images/ows_logo.png" style="border:0px;" alt="OpenWebSpider LOGO Example"/></p>
-
+<div class="headered">
     <p>
-
-    <div id="rnd_container" style="width:600px;"><b class="rnd_top"><b class="rnd_b1"></b><b class="rnd_b2"></b><b
-            class="rnd_b3"></b><b class="rnd_b4"></b></b>
-
-        <div class="rnd_content" style="padding:40px;">
-            <form action="/search" method="get">
-                <input maxLength="100" size="60" value="<!-- query -->" name="q">
-                <input type="submit" value="Search">
-            </form>
-            Examples:
-            <br/>
-            <a href="/search?q=openwebspider">openwebspider</a>
-            <br/>
-            <a href="/search?q=download+openwebspider">download openwebspider</a>
-            <br/>
-        </div>
-        <b class="rnd_bottom"><b class="rnd_b4"></b><b class="rnd_b3"></b><b class="rnd_b2"></b><b
-                class="rnd_b1"></b></b></div>
+	<span class="header-span">OpenWebSpider</span>v0.2.3
+	<form action="/search" method="get">
+           <input maxlength="100" size="60" value="CHANGELOG.txt" name="q">
+           <input type="submit" value="Search">
+        </form>
     </p>
 </div>
 <!-- results -->
